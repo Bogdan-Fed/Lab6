@@ -4,7 +4,7 @@ def encrypt(text,s,lang):
 	for i in range(len(text)):
 		char = text[i] 
 		if lang=='ru':
-			result+=chr((ord(char)+s-1072) % 26 +1072)
+			result+=chr((ord(char)+s-1072) % 32 +1072)
 		elif lang=='en':
 			result += chr((ord(char)+s-97) % 26 +97)
 	return result
